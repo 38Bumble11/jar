@@ -1,0 +1,23 @@
+{
+	"schemaVersion": 1,
+	"id": "auralink",
+	"version": "${version}",
+	"name": "AuraLink",
+	"description": "Link your Minecraft account to Discord and redeem invite-reward diamonds with /redeem.",
+	"authors": [
+		"Aura SMP"
+	],
+	"license": "All-Rights-Reserved",
+	"environment": "server",
+	"entrypoints": {
+		"main": [
+			"com.aurasmp.auralink.AuraLink"
+		]
+	},
+	"depends": {
+		"fabricloader": ">=0.16.0",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
