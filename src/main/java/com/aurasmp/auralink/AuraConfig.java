@@ -23,6 +23,13 @@ public final class AuraConfig {
     /** Seconds a player has to wait between uses of /link and /redeem. */
     public int cooldownSeconds = 5;
 
+    // Messages players see. Edit these in config/auralink.json - no rebuild needed.
+    // (Messages from /link and /redeem themselves come from the Discord bot.)
+    public String msgNotSetUp = "Link isn't set up yet. Tell a person that has access to files (@Sambones927 on Discord)";
+    public String msgCooldown = "Slow down! Try again in a few seconds.";
+    public String msgContacting = "Contacting the Aura SMP bot...";
+    public String msgUnreachable = "Couldn't reach the Aura SMP bot. Try again later! (I know you will try 3 milliseconds later)";
+
     public boolean isConfigured() {
         return apiUrl != null && !apiUrl.contains("BOT-IP")
                 && apiSecret != null && !apiSecret.isBlank() && !apiSecret.equals("change-me");
